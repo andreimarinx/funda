@@ -459,11 +459,12 @@ class House extends StatelessWidget {
                             ))
                       ]),
                 ),
+                // Contact button
                 Container(
                   margin:
                       const EdgeInsets.only(left: 15, right: 15, bottom: 10),
-                  width: double.infinity, // <-- match_parent
-                  height: 50, // <-- match-parent
+                  width: double.infinity,
+                  height: 50,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xfffb922a),
