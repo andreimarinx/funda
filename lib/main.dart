@@ -196,12 +196,19 @@ class House extends StatelessWidget {
             )),
 
         // Box with all the rest of the details
+
         Container(
-            padding: const EdgeInsets.only(top: 10),
-            margin: const EdgeInsets.only(top: 15),
+            padding: const EdgeInsets.only(
+              top: 10,
+            ),
+            margin: const EdgeInsets.only(top: 15, bottom: 25),
             decoration: const BoxDecoration(
               boxShadow: [
-                BoxShadow(color: Colors.grey, spreadRadius: 1, blurRadius: 10)
+                BoxShadow(
+                  color: Colors.grey,
+                  blurRadius: 10,
+                  offset: Offset(3.0, 0),
+                )
               ],
               borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(20), topRight: Radius.circular(20)),
