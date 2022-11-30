@@ -71,7 +71,7 @@ class MyApp extends StatelessWidget {
       title: 'Funda',
       theme: ThemeData(
         colorScheme:
-            ColorScheme.fromSwatch().copyWith(primary: const Color(0xfffb922a)),
+            ColorScheme.fromSwatch().copyWith(primary: const Color(0Xffeaa43a)),
       ),
       home: const MyHomePage(title: 'Funda'),
     );
@@ -141,7 +141,7 @@ class House extends StatelessWidget {
   //Basic decoration to use it more than once
   Decoration decorationContainer = BoxDecoration(
     borderRadius: BorderRadius.circular(5),
-    color: const Color(0xfffb922a),
+    color: const Color(0Xffeaa43a),
   );
   // Define all the variables we need to display the house
   String name = '', description = '', ownerName = '';
@@ -233,7 +233,7 @@ class House extends StatelessWidget {
                                 style: const TextStyle(
                                     color: Colors.black,
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 20),
+                                    fontSize: 23),
                               ),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
@@ -339,7 +339,7 @@ class House extends StatelessWidget {
                                   //Map icon
                                   Image.asset(
                                     'assets/map.png',
-                                    width: 70,
+                                    width: 80,
                                   ),
                                   //Text
                                   const Text(
@@ -360,7 +360,7 @@ class House extends StatelessWidget {
                         const EdgeInsets.only(left: 25, right: 25, bottom: 10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5),
-                      color: const Color(0xfffb922a),
+                      color: const Color(0Xffeaa43a),
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -390,12 +390,12 @@ class House extends StatelessWidget {
                 // Seller information
                 Container(
                   margin:
-                      const EdgeInsets.only(bottom: 10, left: 25, right: 25),
+                      const EdgeInsets.only(bottom: 10, left: 15, right: 15),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5),
                       color: Colors.white,
                       border:
-                          Border.all(width: 2, color: const Color(0xfffb922a))),
+                          Border.all(width: 2, color: const Color(0Xffeaa43a))),
                   child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
@@ -458,6 +458,19 @@ class House extends StatelessWidget {
                               ],
                             ))
                       ]),
+                ),
+                Container(
+                  margin:
+                      const EdgeInsets.only(left: 15, right: 15, bottom: 10),
+                  width: double.infinity, // <-- match_parent
+                  height: 50, // <-- match-parent
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xfffb922a),
+                    ),
+                    onPressed: () {},
+                    child: const Text('Contact with the agent'),
+                  ),
                 )
               ],
             ))
